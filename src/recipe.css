@@ -1,0 +1,65 @@
+.container {
+  min-height: 100vh;
+  min-width: 100%;
+  display: block;
+  padding: 3rem 20%;
+}
+.container button {
+  width: 8rem;
+  height: 2.5rem;
+  font-size: 1rem;
+  outline: none;
+  border: none;
+  font-weight: 600;
+  border-radius: 0.3rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  background-color: rgb(252, 148, 0);
+  color: rgb(252, 255, 255);
+}
+.container .information {
+  display: block;
+  text-align: center;
+  padding: 3rem 0;
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.5rem;
+}
+.container .information .left img {
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+}
+.container .information .left h1 {
+  margin-bottom: 2rem;
+  color: rgb(49, 17, 149);
+  font-weight: 800;
+}
+.container .information .right p {
+  text-align: justify;
+  color: rgb(47, 47, 47);
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 955px) {
+  .container {
+    padding: 2rem 5%;
+  }
+}
+@media screen and (max-width: 666px) {
+  .left img {
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    padding: 0 1rem;
+  }
+  .left h1 {
+    font-size: 1.1rem;
+  }
+  .right p {
+    padding: 0 1rem;
+  }
+}
+@media screen and (min-width: 667px) {
+  .right p {
+    margin: 0 5rem;
+  }
+}/*# sourceMappingURL=recipe.css.map */

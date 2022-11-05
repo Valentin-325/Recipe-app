@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color: rgb(195,161,210);
+
+}
+
+
+.Box{
+    min-height: 100vh;
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 20%;
+
+    .randomBox {
+        border-radius: .5rem;
+        box-shadow: 1px 7px 16px 10px rgba(120, 92, 133, 0.49);
+        min-height: 13rem;
+        margin: 3rem 0;
+        width: 100%;
+        display: flex;
+        background-color: rgb(255, 255, 255);
+        img {
+            height: 13rem;
+            margin-right: 2rem;
+            border-radius: .5rem;
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+
+            h1 {
+                font-size: 1.2rem;
+                color:rgb(49,17,149);
+            }
+
+            button {
+                width: 8rem;
+                height: 2.5rem;
+                font-size: 1rem;
+                outline: none;
+                border: none;
+                font-weight: 600;
+                border-radius: .3rem;
+                margin-bottom: .5rem;
+                cursor: pointer;
+                background-color: rgb(252,148,0);
+                color: rgb(252,255,255);
+            }
+        }
+    }
+
+}
+
+@media screen and (max-width: 899px) {
+    .Box {
+        padding: 0 5%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .Box {
+        padding: 0px 5px;
+    }
+
+    .randomBox{
+        flex-wrap: wrap; 
+        align-items: center;
+        justify-content: center;
+        img {
+            max-height: 8rem;
+        }
+    }
+}
